@@ -1,11 +1,8 @@
 
-function SupsItemController () {
+function SupsItemController() {
 
 
 }
 
 
 export default SupsItemController;
-
-
-
