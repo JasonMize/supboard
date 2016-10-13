@@ -5,7 +5,7 @@ from .serializers import SupSerializer
 
 
 class SupViewSet(viewsets.ModelViewSet):
-    queryset = Sup.objects.all()
+    queryset = Sup.objects.all().order_by('-created_date')
     serializer_class = SupSerializer
 
     
