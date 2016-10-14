@@ -24,5 +24,3 @@ function SupsPageController(supsAPIService, flashesService, $interval) {
 }
 
 export default SupsPageController;
-
-

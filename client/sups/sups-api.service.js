@@ -9,5 +9,3 @@ function supsAPIService($resource) {
 }
 
 export default supsAPIService;
-
-
