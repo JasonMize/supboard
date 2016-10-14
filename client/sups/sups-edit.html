@@ -5,8 +5,20 @@
         </label>
             <textarea class='form-control' ng-model='supsEditCtrl.editedSup.text'></textarea>
     </div>
-    <button class='btn btn-primary' type='submit'>
+    <button 
+        class='btn btn-primary' 
+        type='submit'
+        ng-disabled='!supsEditCtrl.editedSup.text'
+    >
         Save sup
+    </button>
+    <button 
+        ng-show='supsEditCtrl.cancel'
+        class='btn btn-danger' 
+        type='button' 
+        ng-click='supsEditCtrl.cancel()'
+    >
+        Cancel
     </button>
 </form>
 

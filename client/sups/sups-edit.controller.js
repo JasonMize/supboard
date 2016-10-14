@@ -6,6 +6,7 @@ function SupsEditController() {
     ctrl.editedSup = {};
 
     ctrl.$onChanges = function $onChanges() {
+        // creates a copy of the ctrl.sup object
         ctrl.editedSup = merge({}, ctrl.sup);
     };
 
